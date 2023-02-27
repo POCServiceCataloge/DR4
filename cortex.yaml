@@ -1,0 +1,24 @@
+openapi: 3.0.1
+info:
+  title: DR4
+  x-cortex-git:
+    github:
+      repository: TaviscaSolutions/DR4
+  x-cortex-tag: dr4
+  x-cortex-type: service
+  x-cortex-owners:
+     - type: EMAIL
+       email: cloud9_tribe@tavisca.com
+     - name: cloud9
+       type: GROUP
+  x-cortex-dependency:
+  cortex:
+    - tag: dr3
+      description: ensure user has payment information configured
+      metadata:
+        tags:
+          - testing
+   aws:
+      tags:
+        - key: Name
+          value: eks-testl-qa-upg-poc22
