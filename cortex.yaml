@@ -6,7 +6,7 @@ info:
       repository: TaviscaSolutions/DR4
   x-cortex-k8s:
     deployment:
-    - identifier: dr4-deployment
+    - identifier: utilities/botkube
   x-cortex-tag: dr4
   x-cortex-type: service
   x-cortex-owners:
